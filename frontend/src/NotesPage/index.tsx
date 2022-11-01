@@ -1,4 +1,4 @@
-import { useQuery } from "@apollo/react-hooks";
+import { useQuery } from "@apollo/client";
 import { createStyles, makeStyles, Theme, Typography } from "@material-ui/core";
 import { gql } from "apollo-boost";
 import React from "react";

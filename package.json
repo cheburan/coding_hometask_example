@@ -1,9 +1,9 @@
 {
   "name": "tiny-dovetail",
   "version": "1.0.0",
-  "description": "Dovetail coding take home test",
+  "description": "Action Lab coding take home test",
   "main": "index.js",
-  "author": "David Richard <david@dovetailapp.com>",
+  "author": "Unknown",
   "license": "MIT",
   "private": true,
   "devDependencies": {

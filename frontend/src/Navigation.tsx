@@ -12,7 +12,7 @@ export const Navigation: React.FC = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" color="inherit">
-            Tiny Dovetail
+            Action Lab
           </Typography>
           <MenuItem component={Link} to={"/notes"}>
             <NotesIcon />

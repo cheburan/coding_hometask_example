@@ -1,4 +1,4 @@
-import { useMutation } from "@apollo/react-hooks";
+import { useMutation } from "@apollo/client";
 import {
   createStyles,
   makeStyles,
@@ -9,7 +9,7 @@ import {
   InputLabel
 } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
-import gql from "graphql-tag";
+import { gql } from "@apollo/client";
 import React, { useCallback } from "react";
 import { graphql } from "./types";
 
@@ -32,6 +32,10 @@ interface Props {
   id: string;
   title: string;
   content: string;
+}
+
+interface HTMLInputEvent extends FocusEvent {
+  target: HTMLInputElement & EventTarget;
 }
 
 const NOTE_TITLE_MUTATION = gql`
@@ -66,7 +70,7 @@ export const Note: React.FC<Props> = ({ id, title, content }) => {
   >(NOTE_CONTENT_MUTATION);
 
   const handleTitleChange = useCallback(
-    async e => {
+    async (e: HTMLInputEvent) => {
       const title = e.target.value;
       await updateNoteTitleMutation({
         variables: {
@@ -79,7 +83,7 @@ export const Note: React.FC<Props> = ({ id, title, content }) => {
   );
 
   const handleContentChange = useCallback(
-    async e => {
+    async (e: HTMLInputEvent) => {
       const content = e.target.value;
       await updateNoteContentMutation({
         variables: {
@@ -98,14 +102,14 @@ export const Note: React.FC<Props> = ({ id, title, content }) => {
         label={"Title"}
         className={classes.input}
         defaultValue={title}
-        onBlur={handleTitleChange}
+        onBlur={() => handleTitleChange}
         fullWidth
       />
       <TextField
         label={"Content"}
         className={classes.input}
         defaultValue={content}
-        onBlur={handleContentChange}
+        onBlur={() => handleContentChange}
         fullWidth
         multiline
       />

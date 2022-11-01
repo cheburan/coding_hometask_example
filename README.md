@@ -4,7 +4,7 @@ If you're reading this… Congratulations 🎉!! It means we see potential in yo
 and would love to move forward and learn more about your technical side to
 better understand if you'd be a good fit for the team.
 
-We've created a small project called **TinyDovetail**, and written a couple of
+We've created a small project called, and written a couple of
 exercises that we hope will give you the opportunity to demonstrate how you
 approach and tackle practical software problems.
 
@@ -18,9 +18,9 @@ you spent so we can calibrate our assessment.
 
 - Docker 2.x
 - Git
-- Node 10.16.0+
+- Node 16.0+
 - Yarn
-- MacOS >=10.15 (recommended)
+- MacOS >=12 (recommended)
 
 ### Back-end
 

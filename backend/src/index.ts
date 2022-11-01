@@ -1,4 +1,5 @@
-import { ApolloServer, gql, IResolvers } from "apollo-server";
+import { ApolloServer, gql } from "apollo-server";
+import { IResolvers } from 'graphql-tools';
 import {
   getAllNotes,
   getNoteById,

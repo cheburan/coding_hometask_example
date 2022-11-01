@@ -1,5 +1,5 @@
 import { Client } from "pg";
-import * as faker from "faker";
+import { faker } from '@faker-js/faker';
 
 const client = new Client({
   user: "postgres",

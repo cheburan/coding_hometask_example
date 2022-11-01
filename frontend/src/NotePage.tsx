@@ -1,5 +1,4 @@
-import { useQuery } from "@apollo/react-hooks";
-import gql from "graphql-tag";
+import { useQuery, gql } from "@apollo/client";
 import React from "react";
 import { useParams } from "react-router";
 import { Note } from "./Note";
