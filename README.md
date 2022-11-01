@@ -89,6 +89,6 @@ Congratulations! Treat yourself to a cookie 🍪
 
 1. Please ensure there's a pull request which contains all your code changes. If there are multiple, please indicate which one.
 2. Send us an email to let us know you're done.
-3. A couple of Dovetail engineers will perform a detailed review of your submission. We'll get back in touch when we're done.
+3. A couple of engineers will perform a detailed review of your submission. We'll get back in touch when we're done.
 
 Thanks!

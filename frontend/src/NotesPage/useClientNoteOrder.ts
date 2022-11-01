@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from "react";
 
-const storageKey = "tinyDovetailNoteOrder";
+const storageKey = "NoteOrderStorageKey";
 
 const getInitialState = (defaultOrderedNoteIds?: string[]) => {
   const localState = localStorage.getItem(storageKey);
