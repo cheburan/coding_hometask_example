@@ -1,4 +1,4 @@
-# Dovetail coding exercise
+# Coding exercise
 
 If you're reading this… Congratulations 🎉!! It means we see potential in you
 and would love to move forward and learn more about your technical side to
